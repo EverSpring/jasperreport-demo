@@ -14,10 +14,10 @@ import java.util.*;
 @RestController()
 @RequestMapping("test")
 @SpringBootApplication
-public class Chapter7Application {
+public class Chapter8Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Chapter7Application.class, args);
+        SpringApplication.run(Chapter8Application.class, args);
     }
 
     @GetMapping("/jasper")
