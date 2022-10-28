@@ -83,6 +83,8 @@ public class JasperReportUtil {
             InputStream jasperStream = resource.getInputStream();
             JasperPrint jasperPrint = getJasperPrint(jasperStream, parameters, list);
             JasperExportManager.exportReportToPdfStream(jasperPrint, outputStream);
+            // 可用于下载到本地
+            // JasperExportManager.exportReportToPdfFile(jasperPrint,"下载地址");
         } catch (Exception e) {
             log.error("读取报表异常", e);
             outputStream.write("读取报表异常".getBytes());
